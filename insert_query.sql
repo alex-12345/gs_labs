@@ -1,3 +1,4 @@
+//sql запрос наполнения таблиц
 INSERT INTO study_group VALUES (1, 'ИКБО-02-16');
 INSERT INTO student VALUES (1,'Винников', 'Алексей', 'Владимирович', 1);
 
