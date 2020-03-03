@@ -21,7 +21,7 @@ public class JournalController {
         this.journalJdbc = journalJdbc;
     }
 
-    @GetMapping("/student/{student_id}/journal/")
+    @GetMapping("/student/{student_id}/journal")
     public List<Journal> getJournalByStudent(@PathVariable int student_id){
         return journalJdbc.getAllByStudent(student_id);
     }

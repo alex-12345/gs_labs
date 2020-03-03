@@ -30,7 +30,7 @@ public class JournalJdbc {
 
     public List<Journal> getAllByStudyGroup(int study_group_id) {
         return jdbcTemplate.query("SELECT journal.id id, journal.student_id student_id, " +
-                "journal.study_plan_id study_plan_id, journal.in_time in_time, journal.count count FROM journal " +
+                "journal.study_plan_id study_plan_id, journal.in_time in_time, journal.count count, journal.mark_id mark_id FROM journal " +
                 "INNER JOIN student ON journal.student_id = student.id WHERE study_group_id = ?", ROW_MAPPER, study_group_id);
     }
 
