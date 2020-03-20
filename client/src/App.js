@@ -66,11 +66,11 @@ class App extends React.Component  {
     render() {
 
         return (
-            <div className="App">
+            <div className="App" style={{margin:'50px 50px', width: "1200px"}}>
                 { this.state.groupJournals[this.state.activeGroup] ?
                     <JournalTable marks={this.state.groupJournals[this.state.activeGroup]} subjects={this.state.SubjectList[this.state.activeGroup]}/> : null}
                 { this.state.groups ? this.state.groups.map((group) => (
-                    <Button key={group.id} onClick={() => {
+                    <Button style={{margin:'10px 10px 10px 0'}}  key={group.id} onClick={() => {
                         this.setGroupJournal(group.id);
                     }}>{group.name}</Button>
                 )) : null}
