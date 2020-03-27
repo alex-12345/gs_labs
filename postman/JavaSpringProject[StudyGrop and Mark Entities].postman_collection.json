@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "06d68755-4714-4d9a-8cab-867ebd6439a7",
+		"name": "JavaSpringProject[StudyGrop and Mark Entities]",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MarkGetRequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/mark/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"mark",
+						"2"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StudyGroupGetRequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/study_group/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"study_group",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StudyGroupsGetRequest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/study_group/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"study_group",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StudyGroupPostRequest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"Группа-6\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/study_group/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"study_group",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "\"new group\"",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "0",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "StudyGroupDeleteRequest",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/study_group/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"study_group",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
